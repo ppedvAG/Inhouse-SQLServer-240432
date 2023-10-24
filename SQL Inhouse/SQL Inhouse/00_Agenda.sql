@@ -1,3 +1,20 @@
+AndreasR@ppedv.de
+7.0  2008 2012
+
+SQL 
+
+
+14 bis 2022
+Std Ent
+SQL 2016 Sp1 ab dieser Version viele Enterprisefeatures
+
+
+
+
+
+
+
+
 ## DIE DB
 ### Physischen Datenbankentwurf optimieren
 ### Seiten Blöcke
@@ -25,8 +42,6 @@
 ### Welche eklatanten Fehler können in Sichten passieren?
 ### Warum lügt uns SQL Server bei Funktionen an?
 ### warum sind Pocs mal gut mal extrem schlecht
-
-
 
 ## Monitoring
 ### Aktivitätsmonitor
