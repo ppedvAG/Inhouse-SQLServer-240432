@@ -197,6 +197,100 @@ partition fzahl to (bis100,bis200,rest)
 --                      1    2     3
 
 
+create table messdaten (id int) on HOT
+
+create table ptab (id int identity, nummer int, spx char(4100)) 
+on 
+	schZahl(nummer) --auf PartSchema legen
+
+
+declare @i as int = 1
+
+while @i<= 20000
+begin
+	insert into ptab select @i,'XY'
+	set @i+=1
+end
+
+
+
+set statistics io, time on
+select * from ptab where id=117
+select * from ptab where nummer = 117
+
+
+-----------100-------200-------------------------5000------------------------------------
+--DGruppe: weitere Dgruppe (bis5000)
+--F() neue Grenze
+--Scheme : neue DGruppe
+--Tabelle: nee nie nada never
+
+--zuerst scheme
+alter partition scheme schZahl next used bis5000
+
+select $partition.fzahl(nummer), min(nummer), max(nummer), count(*) from ptab
+group by $partition.fzahl(nummer)
+
+--------100-----200split 
+
+alter partition function fzahl()  split range(5000)
+
+---x100x-----200----5000-----
+
+--Dgruppen:nix
+--F(): ja
+--Scheme: ne
+--Tabelle: ne
+
+
+alter partition function fzahl()  merge range(100)
+
+
+select * from ptab where nummer = 6666
+
+
+
+CREATE PARTITION FUNCTION [fzahl](int) AS RANGE LEFT FOR VALUES (200, 5000)
+GO
+
+CREATE PARTITION SCHEME [schZahl] AS PARTITION [fzahl] TO ([bis200], [bis5000], [rest])
+GO
+
+create table archiv(id int not null, nummer int, spx char(4100)) on bis200
+
+alter table ptab switch partition 1 to archiv
+select * from archiv
+
+--HDD 100MB/sek   Part1 1000000000000000000000000000MB 
+
+create partition function fNamen varchar(50)
+as
+RANGE LEFT for Values ('N','R')
+
+--AbisM   N-R   S-Z
+
+
+-------M]-----------------S]----------------------------
+
+create partition function fNamen datetime
+as
+RANGE LEFT for Values ('31.12.2023 23:59:59.997','')
+
+
+
+create partition scheme schx
+as
+partition fzahl to ([PRIMARY],[PRIMARY],[PRIMARY])
+
+
+
+
+
+
+
+
+
+
 
 
 
