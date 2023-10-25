@@ -20,8 +20,8 @@
     <LogicalFolder Name="Abfragen" Type="0" Sorted="true">
       <Items>
         <FileNode Name="00_Agenda.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>00_Agenda.sql</FullPath>
         </FileNode>
@@ -30,6 +30,12 @@
           <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>Columnstore.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Function.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Function.sql</FullPath>
         </FileNode>
         <FileNode Name="instnwnd.sql">
           <AssociatedConnectionMoniker />
@@ -109,17 +115,35 @@
           <AssociatedConnUserName />
           <FullPath>IQP_Interleave_TableFunction.sql</FullPath>
         </FileNode>
+        <FileNode Name="MAXDOP.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>MAXDOP.sql</FullPath>
+        </FileNode>
         <FileNode Name="Partitionierung.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>Partitionierung.sql</FullPath>
         </FileNode>
+        <FileNode Name="Prozeduren.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Prozeduren.sql</FullPath>
+        </FileNode>
         <FileNode Name="Seiten DBDesign.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>Seiten DBDesign.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Sichten.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Sichten.sql</FullPath>
         </FileNode>
         <FileNode Name="Statistiken Aktualisierung.sql">
           <AssociatedConnectionMoniker />
