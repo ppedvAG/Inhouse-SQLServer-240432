@@ -1,9 +1,142 @@
-<?xml version="1.0" encoding="utf-8"?>
-<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="SqlWorkbenchSqlProject">
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="SQL Inhouse">
   <Items>
-    <LogicalFolder Name="Connections" Type="2" />
-    <LogicalFolder Name="Queries" Type="0" />
-    <LogicalFolder Name="Miscellaneous" Type="3" />
-
+    <LogicalFolder Name="Verbindungen" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="BIGBEN:BIGBEN\Administrator">
+          <Created>2023-10-24T13:31:12.395356+02:00</Created>
+          <Type>SQL</Type>
+          <Server>BIGBEN</Server>
+          <UserName />
+          <Authentication>Windows-Authentifizierung</Authentication>
+          <InitialDB>master</InitialDB>
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Abfrage</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Abfragen" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="00_Agenda.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>00_Agenda.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Columnstore.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Columnstore.sql</FullPath>
+        </FileNode>
+        <FileNode Name="instnwnd.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>instnwnd.sql</FullPath>
+        </FileNode>
+        <FileNode Name="IQP_3_Batch_Mode_Adaptive_Join.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>IQP_3_Batch_Mode_Adaptive_Join.sql</FullPath>
+        </FileNode>
+        <FileNode Name="IQP_4_Memory_Grant.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>IQP_4_Memory_Grant.sql</FullPath>
+        </FileNode>
+        <FileNode Name="IQP_5_BatchMode_Rowstore.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>IQP_5_BatchMode_Rowstore.sql</FullPath>
+        </FileNode>
+        <FileNode Name="IQP_6_Interleave.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>IQP_6_Interleave.sql</FullPath>
+        </FileNode>
+        <FileNode Name="IQP_7_UDF.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>IQP_7_UDF.sql</FullPath>
+        </FileNode>
+        <FileNode Name="IQP_8_Table_Variable.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>IQP_8_Table_Variable.sql</FullPath>
+        </FileNode>
+        <FileNode Name="IQP_AdaptiveJoin.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>IQP_AdaptiveJoin.sql</FullPath>
+        </FileNode>
+        <FileNode Name="IQP_BacthMode.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>IQP_BacthMode.sql</FullPath>
+        </FileNode>
+        <FileNode Name="IQP_BatchMode vs Rowstore.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>IQP_BatchMode vs Rowstore.sql</FullPath>
+        </FileNode>
+        <FileNode Name="IQP_BatchMode.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>IQP_BatchMode.sql</FullPath>
+        </FileNode>
+        <FileNode Name="IQP_Interleave_fnWhatIfOutlierEventQuantity.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>IQP_Interleave_fnWhatIfOutlierEventQuantity.sql</FullPath>
+        </FileNode>
+        <FileNode Name="IQP_Interleave_TableFunction.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>IQP_Interleave_TableFunction.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Partitionierung.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Partitionierung.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Seiten DBDesign.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Seiten DBDesign.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Statistiken Aktualisierung.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Statistiken Aktualisierung.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Z_Überflüssige Indizes finden.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Z_Überflüssige Indizes finden.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Sonstiges" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
   </Items>
 </SqlWorkbenchSqlProject>
