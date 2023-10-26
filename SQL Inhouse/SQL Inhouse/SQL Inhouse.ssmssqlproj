@@ -15,6 +15,18 @@
           <ConnectionProtocol>NotSpecified</ConnectionProtocol>
           <ApplicationName>Microsoft SQL Server Management Studio - Abfrage</ApplicationName>
         </ConnectionNode>
+        <ConnectionNode Name="BIGBEN\FE:BIGBEN\Administrator">
+          <Created>2023-10-26T15:56:17.6442964+02:00</Created>
+          <Type>SQL</Type>
+          <Server>BIGBEN\FE</Server>
+          <UserName />
+          <Authentication>Windows-Authentifizierung</Authentication>
+          <InitialDB>master</InitialDB>
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Abfrage</ApplicationName>
+        </ConnectionNode>
       </Items>
     </LogicalFolder>
     <LogicalFolder Name="Abfragen" Type="0" Sorted="true">
@@ -25,33 +37,51 @@
           <AssociatedConnUserName />
           <FullPath>00_Agenda.sql</FullPath>
         </FileNode>
-        <FileNode Name="Columnstore.sql">
+        <FileNode Name="DB_Kompression.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>DB_Kompression.sql</FullPath>
+        </FileNode>
+        <FileNode Name="DB_part Sicht.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>DB_part Sicht.sql</FullPath>
+        </FileNode>
+        <FileNode Name="DB_Partitionierung.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>DB_Partitionierung.sql</FullPath>
+        </FileNode>
+        <FileNode Name="IND_Columnstore.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>Columnstore.sql</FullPath>
+          <FullPath>IND_Columnstore.sql</FullPath>
         </FileNode>
-        <FileNode Name="Function.sql">
+        <FileNode Name="IND_Indizes.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>Function.sql</FullPath>
+          <FullPath>IND_Indizes.sql</FullPath>
         </FileNode>
-        <FileNode Name="instnwnd.sql">
+        <FileNode Name="IND_Statistiken Aktualisierung.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>instnwnd.sql</FullPath>
+          <FullPath>IND_Statistiken Aktualisierung.sql</FullPath>
         </FileNode>
         <FileNode Name="IQP_3_Batch_Mode_Adaptive_Join.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN\FE:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN\FE</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>IQP_3_Batch_Mode_Adaptive_Join.sql</FullPath>
         </FileNode>
         <FileNode Name="IQP_4_Memory_Grant.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN\FE:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN\FE</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>IQP_4_Memory_Grant.sql</FullPath>
         </FileNode>
@@ -74,8 +104,8 @@
           <FullPath>IQP_7_UDF.sql</FullPath>
         </FileNode>
         <FileNode Name="IQP_8_Table_Variable.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN\FE:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN\FE</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>IQP_8_Table_Variable.sql</FullPath>
         </FileNode>
@@ -115,41 +145,77 @@
           <AssociatedConnUserName />
           <FullPath>IQP_Interleave_TableFunction.sql</FullPath>
         </FileNode>
-        <FileNode Name="MAXDOP.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
-          <FullPath>MAXDOP.sql</FullPath>
-        </FileNode>
-        <FileNode Name="Partitionierung.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
-          <AssociatedConnUserName />
-          <FullPath>Partitionierung.sql</FullPath>
-        </FileNode>
-        <FileNode Name="Prozeduren.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
-          <AssociatedConnUserName />
-          <FullPath>Prozeduren.sql</FullPath>
-        </FileNode>
         <FileNode Name="Seiten DBDesign.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>Seiten DBDesign.sql</FullPath>
         </FileNode>
-        <FileNode Name="Sichten.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
+        <FileNode Name="SRV_MAXDOP.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN\FE:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN\FE</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>Sichten.sql</FullPath>
+          <FullPath>SRV_MAXDOP.sql</FullPath>
         </FileNode>
-        <FileNode Name="Statistiken Aktualisierung.sql">
+        <FileNode Name="TSQL_Function.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>Statistiken Aktualisierung.sql</FullPath>
+          <FullPath>TSQL_Function.sql</FullPath>
+        </FileNode>
+        <FileNode Name="TSQL_Prozeduren.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>TSQL_Prozeduren.sql</FullPath>
+        </FileNode>
+        <FileNode Name="TSQL_Sichten.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>TSQL_Sichten.sql</FullPath>
+        </FileNode>
+        <FileNode Name="X_instnwnd.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>X_instnwnd.sql</FullPath>
+        </FileNode>
+        <FileNode Name="X_Spieltabelle.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>X_Spieltabelle.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Z_ Überflüssige Indizes.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Z_ Überflüssige Indizes.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Z_Auffinden geeignter Indizes.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN\FE:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN\FE</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Z_Auffinden geeignter Indizes.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Z_Fehlende Indizes.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Z_Fehlende Indizes.sql</FullPath>
+        </FileNode>
+        <FileNode Name="z_Perfmon_Indikatoren.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>z_Perfmon_Indikatoren.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Z_SQL Server 2022 Diagnostic Information Queries.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Z_SQL Server 2022 Diagnostic Information Queries.sql</FullPath>
         </FileNode>
         <FileNode Name="Z_Überflüssige Indizes finden.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
@@ -160,7 +226,14 @@
       </Items>
     </LogicalFolder>
     <LogicalFolder Name="Sonstiges" Type="3" Sorted="true">
-      <Items />
+      <Items>
+        <FileNode Name="PerfmonVorlage.xml">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>PerfmonVorlage.xml</FullPath>
+        </FileNode>
+      </Items>
     </LogicalFolder>
   </Items>
 </SqlWorkbenchSqlProject>
